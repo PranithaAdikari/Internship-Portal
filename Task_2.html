@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internship Offer Portal</title>
+    <link rel="stylesheet" href="Task_2_style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Internship Offer Portal</h1>
+        <p>
+            Apply for exciting internship opportunities and
+            start your professional journey today.
+        </p>
+    </header>
+    <section class="container">
+        <div class="left-section">
+            <h2>Get Your Dream Internship</h2>
+            <p>
+                Connect with top companies, improve your skills,
+                and unlock amazing career opportunities.
+            </p>
+            <img src="contact.png.jpeg" alt="Internship Image">
+            <div class="social-icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Internship Application Form</h2>
+            <form id="internshipForm">
+
+                <input type="text"
+                id="name"
+                placeholder="Enter Full Name">
+                <input type="email"
+
+                id="email"
+                placeholder="Enter Email Address">
+
+                <input type="tel"
+                id="phone"
+                placeholder="Enter Phone Number">
+
+                <select id="domain">
+
+                    <option value="">Select Internship Domain</option>
+
+                    <option>Web Development</option>
+
+                    <option>Java Developer</option>
+
+                    <option>Python Developer</option>
+
+                    <option>UI/UX Designer</option>
+
+                    <option>Mern Stack Developer</option>
+
+                    <option>Cloud Computing</option>
+
+                </select>
+                <textarea id="message"
+                placeholder="Why should we hire you?"></textarea>
+
+                <button type="submit">Apply Now</button>
+                <p id="error"></p>
+            </form>
+        </div>
+    </section>
+    <section class="todo-section">
+        <h2>Internship Preparation Checklist</h2>
+        <div class="todo-input">
+
+            <input type="text"
+            id="taskInput"
+            placeholder="Add Preparation Task">
+
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+    <script src="Task_2_script.js"></script>
+</body>
+</html>
